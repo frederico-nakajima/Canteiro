@@ -1,0 +1,51 @@
+*{
+    margin: 0;
+    padding: 0;
+    
+        font-family: "Sriracha", cursive;
+        font-weight: 400;
+        font-style: normal;
+     
+    
+}
+
+header{
+    margin-top:30px;
+    text-align: center;
+    margin-bottom: 30px;
+}
+
+section{
+    margin-bottom: 100px;
+}
+p{
+    line-height: 1.5rem;
+    margin-left: 5vw;
+}
+div{
+    background-color: rgba(128, 128, 128, 0.79);
+    width: 80vw;
+}
+
+
+
+
+#section-01{
+    background-image: url('pexels-gülşah-aydoğan-19040147.jpg');
+    background-size: cover;
+    background-attachment: fixed;
+    padding: 50px 0px;
+    width:100vw;
+
+}
+
+#section-02{
+    background-image: url('pexels-cami-19908845.jpg');
+    background-size: cover;
+    background-attachment: fixed;
+    padding: 50px 0px;
+    width:100vw;
+
+}
+  
+
