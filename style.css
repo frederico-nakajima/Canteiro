@@ -100,14 +100,17 @@ header{
 
 section{
     margin-bottom: 100px;
+    
 }
 p{
     line-height: 1.5rem;
     margin-left: 5vw;
+    
 }
 div{
     background-color: rgba(128, 128, 128, 0.79);
     width: 80vw;
+    max-width:600px;
 }
 
 
@@ -121,6 +124,7 @@ div{
     background-attachment: fixed;
     padding: 50px 0px;
     width:100vw;
+    max-width: 690px;
 
 }
 
@@ -130,6 +134,7 @@ div{
     background-attachment: fixed;
     padding: 50px 0px;
     width:100vw;
+    max-width: 690px;
 
 }
 footer{
@@ -160,10 +165,4 @@ footer p{
     }
 }
   
-@media  (min-width:900px){
 
-
-
-
-    
-}
