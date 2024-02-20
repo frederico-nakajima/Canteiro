@@ -46,7 +46,7 @@ a{
     margin: 0 auto;
     position: relative;
     top: 10px;
-    left: 200px;
+    left: 30vw;
     width: 64px;
     height: 24px;
     background-color:var(--bg-fundo);
@@ -113,6 +113,8 @@ div{
 
 
 
+
+
 #section-01{
     background-image: url('pexels-gülşah-aydoğan-19040147.jpg');
     background-size: cover;
@@ -158,4 +160,10 @@ footer p{
     }
 }
   
+@media  (min-width:900px){
 
+
+
+
+    
+}
