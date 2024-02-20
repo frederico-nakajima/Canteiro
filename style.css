@@ -2,17 +2,100 @@
     margin: 0;
     padding: 0;
     
-        font-family: "Sriracha", cursive;
-        font-weight: 400;
-        font-style: normal;
+    font-family: "Sriracha", cursive;
+    font-weight: 400;
+    font-style: normal;
      
     
+}
+:root{
+    --cor-font:black;
+    --bg-fundo: white;
+    --bg-footer: black;
+    --astro-url: url(assets/sun.svg);
+    --cor-traco:  black;
+    --social-hover:rgba(255, 255, 255, 0.092);
+    --cor-font-footer:white;
+
+
+}
+
+.darkMode{
+    --cor-font:white;
+    --bg-fundo: black;
+    --bg-footer: white;
+    --astro-url: url(assets/moon-stars.svg);
+    --cor-traco:  white;
+    --cor-font-footer:black;
+    --social-hover:rgba(0, 0, 0, 0.1);
+    
+}
+
+body{
+    background-color:var(--bg-fundo) ;
+    color: var(--cor-font);
+    height: 100vh;
+}
+a{
+    color: var(--cor-font);
+    
+}
+
+
+#switch{
+    margin: 0 auto;
+    position: relative;
+    top: 10px;
+    left: 200px;
+    width: 64px;
+    height: 24px;
+    background-color:var(--bg-fundo);
+}
+
+#switch button{
+    border-radius: 50%;
+    position: absolute;
+    top: 50%;
+    left: 0;
+    z-index: 1;
+    transform: translateY(-50%);
+    background-image:var(--astro-url);
+    background-repeat: no-repeat;
+    background-position: center;
+    width: 32px;
+    height: 32px;
+    border: 0;
+    animation: slide-back 0.2s;
+   
+       
+}
+#switch button:hover{
+    outline:8px solid var(--social-hover)
+
+}
+span{
+    border-radius: 9999px;
+    border: 1px solid var(--cor-traco);
+    background:var(--bg-fundo);
+    width: 64px;
+    height: 24px;
+    display: block;
+    
+
+}
+.darkMode #switch button{
+    animation: slide-in 0.4s forwards;
+}
+#switch button:hover{
+    outline:8px solid var(--social-hover)
+
 }
 
 header{
     margin-top:30px;
     text-align: center;
     margin-bottom: 30px;
+    
 }
 
 section{
@@ -48,14 +131,31 @@ div{
 
 }
 footer{
-   text-align: center;
-    background-color: black;
-    color: white;
+    text-align: center;
+    background-color: var( --bg-footer);
+    color: var(--cor-font-footer);
     margin: 10px auto;
 }
 footer p{
     font-family: Arial, Helvetica, sans-serif;
 
+}
+@keyframes slide-in{
+    from{
+        left:0;
+    }
+    to{
+        left:50%;
+    }
+}
+
+@keyframes slide-back{
+    from{
+        left:50%;
+    }
+    to{
+        left:0;
+    }
 }
   
 
